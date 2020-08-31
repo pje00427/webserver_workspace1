@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>Get 방식으로 요청 후 응답페이지 보기</h1>
+	
+	<p>
+		특징1. GET방식으로 요청하는건 URL의 header영역에 데이터들을 포함시켜서 요청함<br>
+			=> GET방식으로 요청하게 되면 사용자가 입력한 값(데이터)들이 URL에 노출이 됨 <br>
+			=> 보안 유지가 불가능함 <br>
+			=> 즉, 로그인이나 회원가입 같은 경우 GET 방식이 부적합 함 <br><br>
+		
+		특징2. 전송하는 길이의 제한이 있음 => 초과된 데이터는 절단 됨 (즉, 짤림) => 게시판 작성같은 경우 GET 방식 부적합함<br><br>
+		
+		특징3. 장점이라고 한다면 URL에 데이터가 포함되어 있기 때문에 즐겨찾기(북마크)가 가능하다. (즐겨찾기 해놨다가 나중에 다시 그 url 요청 가능하다.)<br>
+			=> 검색기능 같은 경우 GET 방식에 적합 
+	</p>
+	
+	<h2>개인정보 입력 - GET</h2>
+	
+	<p>당신의 개인 정보를 입력하세요. 입력 후 확인 버튼을 눌러주세요.</p>
+	<!-- 
+		form 태그 내의 submit 제출 버튼 클릭시 action속성에 작성된 값으로 url요청됨!
+		즉, 이요청을 받아주는 서블릿 관련 내용을 action에 작성해야됨
+		
+		* 주의할점 : 서블릿 매핑값은 반드시 contextRoot(1_Servlet) 뒤에 작성이 되어야만 함
+		
+		action 작성된 값이 /로 시작되는 경우 						해당 값이 localhost:8888 뒤에 붙는다. (절대경로 방식)
+		action 작성된 값이 /없이 바로 시작되는 경우 					해당 값이 현재 이페이지가 보여지고 있는 url 경로로부터 뒤에 붙어짐 (상대경로 방식) 
+	 -->
+	<form action="/1_Servlet/test1.do" method="GET">
+		
+		<ul>
+			<li>이름 : <input type="text" name="name"></li>
+			<li>
+				성별 :
+				남자 <input type="radio" name="gender" value="M">
+				여자 <input type="radio" name="gender" value="F">
+			</li>
+			<li>
+				나이 : <input type="number" name="age">
+			</li>
+			<li>
+				사는도시 :
+				<select name="city">
+					<option value="서울">서울</option>
+					<option value="강원">강원</option>
+					<option value="경기">경기</option>
+				</select>
+			</li>
+			<li>
+				키 : <input type="range" name="height" min="140" max="200" step="1">
+			</li>
+			<li>
+				좋아하는 음식 (모두 고르시오) : 
+				한식 <input type="checkbox" name="food" value="한식">
+				양식 <input type="checkbox" name="food" value="양식">
+				분식 <input type="checkbox" name="food" value="분식">
+				일식 <input type="checkbox" name="food" value="일식">
+			</li>
+		</ul>
+		
+		<br>
+		
+		<input type="submit" value="확인">
+	</form>
+	
+</body>
+</html>

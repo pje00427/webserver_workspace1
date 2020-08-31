@@ -1,0 +1,22 @@
+<!DOCTYPE html> <!-- HTML5 문서 형식 선언 -->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<!-- http://localhost:8888/웹어플리케이션Context루트명
+		위와 같은 url로 요청시 보여지는 메인페이지 == index.html
+	 -->
+	<h1>어서와 web은 처음이지?</h1>
+	
+	<h2>* Sevlet</h2>
+	<p>
+		<b>서블릿이란 ? </b><br>
+		
+		웹서비스를 위한 "자바클래스"를 말하며 자바를 사용해서 웹을 만들기 위해 필요한 기술이다. <br>
+		
+	</p>
+	
+</body>
+</html>

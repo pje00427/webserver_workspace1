@@ -1,0 +1,24 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8" import="java.util.ArrayList"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<% // 스크립틀릿 : 이안에 일반적인 자바 코드 작성가능 (변수 선언 및 초기화 제어문 등등 ..)
+		int sum = 0;
+	
+		for(int i=1; i<=100; i++){
+			sum += i;
+		}
+		
+		System.out.println("덧셈끝! ");
+		
+		ArrayList<String> list = new ArrayList<>();
+		
+	%>
+</body>
+</html>

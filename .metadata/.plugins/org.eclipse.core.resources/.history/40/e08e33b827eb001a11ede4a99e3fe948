@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<h1>* JSP(Java Server Page)</h1>
+	
+	<p>
+		JSP란, HTML 형식 내에서 자바코드를 사용할 수 있는 "자바언어"로 <br>
+		서블릿(Java코드내)에서 응답화면(HTML)을 구현했던 복잡함을 보다 간단하게 해결 가능<br>
+		=> 즉, JSP의 가장 큰 장점은 Sevlet에서는 비즈니스 로직 처리에만 집중하고 <br>
+		    응답화면을 만들어(프레젠테이션 로직)내는건 JSP에서 집중하게끔 분리 할 수 있다. 
+	</p>
+	<hr>
+	
+	<h1>JSP Elements 표현법</h1>
+	
+	<h2>1. JSP 스크립팅 원소(Scripting Element)</h2>
+	<p>JSP 페이지에서 자바 코드를 기술 할 수 있게 해주는 기능</p>
+	<ol>
+		<li>
+			선언문 : &lt;%! 자바코드 	%&gt;
+		</li>
+		<li>
+		
+		</li>
+		<li>
+		
+		</li>
+		
+	</ol>
+	<hr>
+	
+	<h2>2. 지시어(Directive)</h2>
+	
+	
+	
+		
+</body>
+</html>

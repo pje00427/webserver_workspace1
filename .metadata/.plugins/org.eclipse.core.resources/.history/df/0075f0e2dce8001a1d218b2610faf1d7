@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>POST 방식으로 페이지 요청해보기</h1>
+	
+	<p>
+		특징.post방식으로 요청하는건 URL의 Body영역에 데이터를 포함시켜서 요청 <br>
+		=> 사용자가 입력한 값 (데이터)들이 URL에 노출되지 않음 <br>
+		=> 보안유지가 가능함<br>
+		=> 즉, 로그인이나 회원가입 같은 경우 POST방식이 적합함<br><br>
+		
+		특징2. 전송하는 길이에 제한 없음 => 게시판 작성 같은 경우 POST 방식에 적합함 <br>
+		
+		
+	</p>
+</body>
+</html>

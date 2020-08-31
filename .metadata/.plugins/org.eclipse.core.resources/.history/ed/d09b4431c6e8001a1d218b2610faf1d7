@@ -1,0 +1,55 @@
+package com.kh.controller;
+
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**
+ * Servlet implementation class RequestGetServlet
+ */
+@WebServlet("/test1.do")
+public class RequestGetServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public RequestGetServlet() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		/*
+		 * get 방식으로 요청했으면 내부적으로 자동으로 이 doGet()메소드가 호출 될 거 임
+		 * 
+		 * 첫번째 매개변수인 HttpServletRequest request 에는 사용자가 요청한 내용들을 받아주는 용소
+		 * 두번째 매개변수인 HttpServletRequest response 에는 요청 처리후 나중에 사용자에게 응답을 해줄때 사용할 용도
+		 * 
+		 * request : 요청시 전달 된 내용 (사용자가 입력한 값들, 요청전송방식, 요청한 사용자의 ip 등등)
+		 * response : 요청 처리 후 응답을 할 때 사용하게되는 객체
+		 */
+		/*
+		 * 요청을 처리하기 위해서 전달된 값을 뽑아야됨 (request 에 parameter 공간에 담겨있음)
+		 * > request 안의 파라미터 영역안에 데이터가 (키=밸류) 형태로 담겨있음(name속성값 = value)
+		 * 
+		 * 
+		 */
+		System.out.println("실행되나?");
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		doGet(request, response);
+	}
+
+}

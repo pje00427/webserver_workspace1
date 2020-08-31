@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>Get 방식으로 요청 후 응답페이지 보기</h1>
+	
+	<p>
+		특징1. GET방식으로 요청하는건 URL의 header영역에 데이터들을 포함시켜서 요청함<br>
+			=> GET방식으로 요청하게 되면 사용자가 입력한 값(데이터)들이 URL에 노출이 됨 <br>
+			=> 보안 유지가 불가능함 <br>
+			=> 즉, 로그인이나 회원가입 같은 경우 GET 방식이 부적합 함 <br><br>
+		
+		특징2. 전송하는 길이의 제한이 있음 => 초과된 데이터는 절단 됨 (즉, 짤림) => 게시판 작성같은 경우 GET 방식 부적합함
+		
+	</p>
+	
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html> <!-- HTML5 문서 형식 선언 -->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<!-- http://localhost:8888/웹어플리케이션Context루트명
+		위와 같은 url로 요청시 보여지는 메인페이지 == index.html
+	 -->
+	<h1>어서와 web은 처음이지?</h1>
+	
+	<h2>* Sevlet</h2>
+	<p>
+		<b>서블릿이란 ? </b><br>
+		
+		웹서비스를 위한 "자바클래스"를 말하며 자바를 사용해서 웹을 만들기 위해 필요한 기술이다. <br>
+		>> 클라이언트의 요청을 바당 처리하고 그에 해당하는 응답페이지를 만들어서 다시 사용자에게 전송하는 역할을 하는 자바클래스(controller의 기능)<br>
+		>> 즉, 웹에서 동적인 페이지를 JAVA로 구현할 수 있게 도와주는 서버측 프로그램 (WAS 서버에서 구동됨)
+		
+	</p>
+	
+	<h3><a href="views/requestTest_GET.html">Servlet-Get방식</a></h3>
+	<h3><a href="views/requestTest_Post.html">Servlet-Post방식</a></h3>
+</body>
+</html>

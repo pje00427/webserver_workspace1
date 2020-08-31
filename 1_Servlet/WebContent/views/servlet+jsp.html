@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h2>개인정보 입력</h2>
+	
+		<form action="/1_Servlet/test3.do" method="POST">
+			
+			<ul>
+				<li>이름 : <input type="text" name="name"></li>
+				<li>
+					성별 :
+					남자 <input type="radio" name="gender" value="M">
+					여자 <input type="radio" name="gender" value="F">
+				</li>
+				<li>
+					나이 : <input type="number" name="age">
+				</li>
+				<li>
+					사는도시 :
+					<select name="city">
+						<option value="서울">서울</option>
+						<option value="강원">강원</option>
+						<option value="경기">경기</option>
+					</select>
+				</li>
+				<li>
+					키 : <input type="range" name="height" min="140" max="200" step="1">
+				</li>
+				<li>
+					좋아하는 음식 (모두 고르시오) : 
+					한식 <input type="checkbox" name="food" value="한식">
+					양식 <input type="checkbox" name="food" value="양식">
+					분식 <input type="checkbox" name="food" value="분식">
+					일식 <input type="checkbox" name="food" value="일식">
+				</li>
+			</ul>
+			
+			<br>
+			
+			<input type="submit" value="확인">
+		</form>
+</body>
+</html>

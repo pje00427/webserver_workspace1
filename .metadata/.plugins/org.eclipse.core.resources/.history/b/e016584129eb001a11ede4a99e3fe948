@@ -1,0 +1,17 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<!-- HTML 주석 : 개발자도구 탭에 노출됨 -->
+	<%-- JSP 주석 : 개발자도구 탭에 노출 안됨 --%>
+	
+	<%
+	
+	%>
+</body>
+</html>

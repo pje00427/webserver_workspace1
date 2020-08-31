@@ -1,0 +1,13 @@
+<!DOCTYPE html> <!-- HTML5 문서 형식 선언 -->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<!-- http://localhost:8888/웹어플리케이션Context루트명 -->
+	<h1>어서와 web은 처음이지?</h1>
+	
+	
+</body>
+</html>

@@ -1,0 +1,30 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h2>개인정보결과 화면</h2>
+	
+	<span id="name">xxx</span>님은
+	<span id="age">xx</span>살이며,
+	<span id="city">xx</span>에 사는
+	키는 <span id="height">xx</span>cm이고
+	성별은
+		<span id="gender">남자</span>입니다. <br>
+		
+		<span id="gender">여자</span>입니다. <br>
+		
+		선택하지 않았습니다. <br>
+		
+	좋아하는 음식은 
+		<ul>
+			<li>xxx</li>
+		</ul>
+		없습니다.
+	
+</body>
+</html>
